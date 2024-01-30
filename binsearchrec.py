@@ -12,6 +12,7 @@ def bs(l,o,i=0,d=-1):
         return bs(l[co+1::],o,i,1)
 
 
+# same as the above function but the code is a tad bit more optimized.
 def binsearch(arr: list, obj: float, i: int = 0, d: int = -1) -> int:
     #print(arr, '\n')
     cutoff = int(len(arr)/2-1 if len(arr)&0 else (len(arr)-1)/2)
